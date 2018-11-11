@@ -812,6 +812,8 @@ table tr td a { color: #e93e21; }
 .menu-body .menu-details .price { color: #e93e21; font-size: 30px; font-family: 'Amatic SC', cursive; line-height: 40px; font-weight: 600; }
 .menu-body p { color: #fff; }
 
+.price-desc { color: #e93e21; font-family: 'Amatic SC', cursive; font-size: 20px; font-weight: 600; }
+
 /*menu whitebg*/
 .menu-body.menu-white .menu-title h4, .menu-body.menu-white p { color: #1e2327; }
 
