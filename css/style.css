@@ -12,10 +12,10 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 /*================================================
 [  Table of contents  ]
 ================================================
- 
+
 :: General
 :: Header
-:: Rev slider 
+:: Rev slider
 :: Feature-box
 :: Service
 :: Counter
@@ -36,15 +36,15 @@ NOTE: This is main stylesheet of template, This file contains the styling for th
 :: Accordion
 :: Reservation
 :: Contact
-:: Error page 
+:: Error page
 :: Coming soon
 :: Pagination
-:: Upcoming-event 
+:: Upcoming-event
 :: Newsletter
 :: Blog page
 :: Alerts and callouts
 :: Footer
-  
+
 ======================================
 [ End table content ]
 ======================================*/
@@ -76,14 +76,14 @@ label { font-size: 15px; font-weight: 400; color: #9d9d9d; }
 strong { color: #9d9d9d; }
 
 /***************************
-Page section margin padding 
+Page section margin padding
 ****************************/
 .page-section-ptb { padding: 80px 0; }
 .page-section-pt { padding: 80px 0 0; }
 .page-section-pb { padding: 0 0 80px; }
 
 /*************************
-    Section title 
+    Section title
 ***********************/
 .section-title { margin-bottom: 50px; padding: 0 100px; }
 .section-title h2 { font-size: 50px; padding-bottom: 15px; font-weight: 700; position: relative; margin-bottom: 10px; }
@@ -150,6 +150,7 @@ Page section margin padding
 .text-black { color: #1e2327; }
 .text-gray { color: #9d9d9d; }
 .text-light-gray { color: #d8d8d8; }
+
 
 /*************************
     Input
@@ -446,7 +447,7 @@ table tr td a { color: #e93e21; }
 /*mega-menu*/
 .mega-menu .drop-down-multilevel.right-menu { right: 0px; }
 .mega-menu .menu-links > li:last-child > a { padding-right: 0px; }
-.mega-menu .menu-logo li img, .header-5 .logo img { height: 60px; }
+.mega-menu .menu-logo li img, .header-5 .logo img { height: 130px; }
 
 /*default*/
 .header { background: transparent; z-index: 999; padding: 15px 0 20px; position: absolute; width: 100%; }
@@ -554,7 +555,7 @@ table tr td a { color: #e93e21; }
 .header-5 .mega-menu .menu-links > li.active .drop-down a:hover { color: #e93e21; }
 
 /*************************
-    rev slider 
+    rev slider
 *************************/
 
 /*home 1*/
@@ -645,8 +646,10 @@ table tr td a { color: #e93e21; }
 .feature-box.right-icon .icon i { font-size: 40px; line-height: 40px; }
 .feature-box.right-icon .info { display: table-cell; vertical-align: top; text-align: right; }
 
+
+
 /*************************
-    service 
+    service
 *************************/
 .service-feature { position: relative; }
 .service-feature .container { position: relative; }
@@ -664,7 +667,7 @@ table tr td a { color: #e93e21; }
 .service:hover .service-img, .service.active .service-img { opacity: 1; }
 
 /*************************
-    counter 
+    counter
 *************************/
 .counter h5 { font-size: 32px; line-height: 32px; margin-bottom: 0; }
 .counter span.timer { font-size: 60px; line-height: 60px; display: block; font-weight: bold; font-family: 'Amatic SC', cursive; margin: 30px 0px; }
@@ -681,7 +684,7 @@ table tr td a { color: #e93e21; }
 .counter.light { position: relative; }
 
 /*************************
-    Gallery 
+    Gallery
 *************************/
 .gallery { position: relative; }
 .isotope-filters { display: table; margin: 0 auto 50px; }
@@ -1041,7 +1044,7 @@ select { border: 1px solid #e5e5e5; color: #777; cursor: pointer; display: block
 .contact .contact-form .form-field input, .contact .contact-form .form-field textarea { color: #626262; }
 
 /*************************************
-         error-page 
+         error-page
 **************************************/
 .error-page h3 { font-size: 70px; margin-top: 40px; line-height: 70px; }
 .error-page strong { font-style: italic; font-size: 20px; display: block; margin-bottom: 30px; margin-top: 15px; font-weight: normal; }
