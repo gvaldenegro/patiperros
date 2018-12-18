@@ -216,10 +216,11 @@
   float: none;
   width: 100%;
   color: #ffffff;
-  font-size: 0.933em;
+  font-size: 1em;
   line-height: 64px;
   position: relative;
   text-transform: capitalize;
+  font-weight: bold;
 }
 .mega-menu .menu-links > li > a:hover { color: #e93e21; }
 @media screen and (max-width: 992px) {

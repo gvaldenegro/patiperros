@@ -56,7 +56,7 @@ NOTE: This file includes all revolution slider scripts.
             },
             visibilityLevels:[1240,1024,778,480],
             gridwidth:1170,
-            gridheight:990,
+            gridheight:550,
             lazyType:"none",
             shadow:0,
             spinner:"spinner2",
