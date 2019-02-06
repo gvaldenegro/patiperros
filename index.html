@@ -71,7 +71,7 @@ header -->
           <div class="topbar-left text-left">
             <ul>
               <li><i class="fa fa-phone"></i> (2) 3233 8107 </li>
-              <li><i class="fa fa-envelope-o"></i> reservas@patiperros.cl</li>
+              <li><i class="fa fa-envelope-o"></i> reservas@patiperrosurbanfood.cl</li>
             </ul>
           </div>
         </div>
@@ -131,7 +131,7 @@ header -->
                         <div class="address">
                           <p>Gran Avenida José Miguel Carrera #8903 </p>
                           <p> (2) 3233 8107 </p>
-                          <p>reservas@patiperros.cl </p>
+                          <p>reservas@patiperrosurbanfood.cl </p>
                         
                           <ul class="list-inline mt-15">
                             <li><a href="#"> <i class="fa fa-facebook"></i> </a> </li>
@@ -232,7 +232,7 @@ slider -->
           data-splitin="none"
           data-splitout="none"
           data-responsive_offset="on"
-          style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:Lilita One;text-transform:uppercase;-webkit-text-stroke: 1px white;">Bienvenido a Patiperros</div>
+          style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:'Satisfy', cursive;-webkit-text-stroke: 1px white;">Bienvenido a Patiperros</div>
         <!-- LAYER NR. 5 -->
         <div class="tp-caption   tp-resizeme"
           id="slide-4-layer-11"
@@ -332,7 +332,7 @@ slider -->
           data-splitin="none"
           data-splitout="none"
           data-responsive_offset="on"
-          style="z-index: 15; white-space: nowrap; font-size: 24px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Lilita One;text-transform:uppercase;"> </div>
+          style="z-index: 15; white-space: nowrap; font-size: 24px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:'Satisfy', cursive;"> </div>
         </li>
       <!-- SLIDE  -->
         <li data-index="rs-19" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="revolution/assets/slide2.png"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
@@ -393,7 +393,7 @@ slider -->
           data-splitin="none"
           data-splitout="none"
           data-responsive_offset="on"
-          style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:Lilita One;text-transform:uppercase;-webkit-text-stroke: 1px white;">Comida deliciosa
+          style="z-index: 13; white-space: nowrap; font-size: 65px; line-height: 65px; font-weight: 400; font-family:'Satisfy', cursive;-webkit-text-stroke: 1px white;">Comida deliciosa
         </div>
         <!-- LAYER NR. 5 -->
         <div class="tp-caption   tp-resizeme"
@@ -494,7 +494,7 @@ slider -->
           data-splitin="none"
           data-splitout="none"
           data-responsive_offset="on"
-          style="z-index: 15; white-space: nowrap; font-size: 24px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Lilita One;text-transform:uppercase;">Estamos para servirte
+          style="z-index: 15; white-space: nowrap; font-size: 24px; line-height: 24px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:'Satisfy', cursive;">Estamos para servirte
         </div>
         </li>
       </ul>
@@ -678,44 +678,45 @@ reservation form  -->
         </div>
       </div>
       <div class="col-lg-8 col-md-7 col-sm-12 pl-0 pr-0 white-bg">
-        <form class="row">
+        <form class="row" id="reservationForm" role="form" method="post" action="php/reservation-form.php">
           <div class="col-lg-12 col-md-12">
             <h3 class="mb-30">Formulario de Reserva</h3>
+            <div id="formmessage">Success/Error Message Goes Here</div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-pencil"></i>
-              <input class="web placeholder" type="text" placeholder="Nombre Completo" name="web">
+              <input class="web placeholder" type="text" placeholder="Nombre Completo" name="name">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-phone"></i>
-              <input class="web placeholder" type="text" placeholder="Teléfono" name="web">
+              <input class="web placeholder" type="text" placeholder="Teléfono" name="phone">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <i class="fa fa-envelope-o"></i>
-              <input class="web placeholder" type="text" placeholder="Correo" name="web">
+              <input class="web placeholder" type="email" placeholder="Correo" name="email">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field" id="datepicker">
               <i class="fa fa-calendar add-on"></i>
-              <input data-format="yyyy-MM-dd" type="text" placeholder="Seleccione una fecha">
+              <input data-format="yyyy-MM-dd" type="text" placeholder="Seleccione una fecha" name="date">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field" id="timepicker">
               <i class="fa fa-clock-o icon-time add-on"></i>
-              <input data-format="hh:mm:ss" type="text" placeholder="Horario">
+              <input data-format="hh:mm:ss" type="text" placeholder="Horario" name="time">
             </div>
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="form-field">
               <div class="selected-box">
-                <select>
+                <select name="persons">
                   <option value="Person">Acompañantes</option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -735,7 +736,8 @@ reservation form  -->
           </div>
           <div class="col-lg-12">
             <div class="submit-button">
-              <a class="button" href="#">Solicitar reserva</a>
+              <input type="hidden" name="action" value="sendEmail"/>
+               <button id="submit" name="Submit" type="submit" class="button"> Solicitar Reserva</button>
               <span>Toda reserva realizada será confirmada por Patiperros Restaurante</span>
             </div>
           </div>
@@ -895,7 +897,7 @@ footer 2 -->
           <h4 class="text-white mb-30">Contacto</h4>
           <p class="text-white">Gran Avenida José Miguel Carrera #8903</p>
           <p class="text-white">(2) 3233 8107</p>
-          <p class="text-white">reservas@patiperros.cl</p>
+          <p class="text-white">reservas@patiperrosurbanfood.cl</p>
 
         </div>
       </div>

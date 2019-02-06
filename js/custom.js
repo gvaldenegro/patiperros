@@ -386,6 +386,30 @@ NOTE:
             event.preventDefault();
           });
    }
+  
+/*************************
+     PHP reservation form 
+*************************/
+  POTENZA.reservationform = function () {
+      var reservationForm = $("#reservationForm");
+
+          reservationForm.submit(function( event ) {
+            $("#ajaxloader").show();
+            reservationForm.hide();
+            $.ajax({
+              url:'php/reservation-form.php',
+              data:$(this).serialize(),
+              type:'post',
+              success:function(response){
+                $("#ajaxloader").hide();
+                reservationForm.show();
+                reservationForm.find("input, textarea").val("");
+                $("#formmessage").html(response).show().delay(2000).fadeOut('slow');
+              }
+            });
+            event.preventDefault();
+          });
+   }
  
 //Window load functions
   window.onload = function () {
@@ -408,6 +432,7 @@ NOTE:
         POTENZA.accordion(),
         POTENZA.countdownTimer(),
         POTENZA.contactform(),
+        POTENZA.reservationform(),
         POTENZA.niceScroll();     
      });
 })(jQuery);

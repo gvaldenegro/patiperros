@@ -3,12 +3,15 @@ if(isset($_POST["action"])) {
   $name = $_POST['name'];                 // Sender's name
   $email = $_POST['email'];     // Sender's email address
   $phone  = $_POST['phone'];     // Sender's email address
+  $date = $_POST['date'];
+  $time = $_POST['time'];
+  $persons = $_POST['persons'];
   $message = $_POST['message'];    // Sender's message
-  $from = 'contacto@patiperrosurbanfood.cl';    
-  $to = 'contacto@patiperrosurbanfood.cl';     // Recipient's email address
-  $subject = 'Contacto desde el sitio web ';
+  $from = 'reservas@patiperrosurbanfood.cl';    
+  $to = 'reservas@patiperrosurbanfood.cl';     // Recipient's email address
+  $subject = 'Reserva desde el sitio web ';
 
- $body = " De: $name \n E-Mail: $email \n Telefono : $phone \n Mensaje : $message"  ;
+ $body = " De: $name \n E-Mail: $email \n Telefono: $phone \n Fecha: $date \n Hora: $time \n Personas: $persons \n Mensaje: $message"  ;
 	
 	// init error message 
 	$errmsg='';
@@ -32,10 +35,10 @@ if(isset($_POST["action"])) {
   // If there are no errors, send the email
   if (!$errmsg) {
 		if (mail ($to, $subject, $body, $from)) {
-			$result='<div class="alert alert-success">Gracias por contactarnos. Su mensaje ha sido enviado con éxito. Nos pondremos en contacto con usted muy pronto!</div>'; 
+			$result='<div class="alert alert-success">Gracias por contactarnos. Su reserva ha sido enviada con éxito. Nos pondremos en contacto con usted muy pronto!</div>'; 
 		} 
 		else {
-		  $result='<div class="alert alert-danger">Lo siento, hubo un error al enviar tu mensaje. Por favor, inténtelo de nuevo más tarde.</div>';
+		  $result='<div class="alert alert-danger">Lo siento, hubo un error al enviar tu reserva. Por favor, inténtelo de nuevo más tarde.</div>';
 		}
 	}
 	else{
