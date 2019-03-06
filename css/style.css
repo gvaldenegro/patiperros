@@ -1,3 +1,4 @@
+
 /*
 
 Template: The Zayka - Multipurpose Restaurant, Food & Cafe HTML5 Template
@@ -1127,7 +1128,7 @@ select { border: 1px solid #e5e5e5; color: #777; cursor: pointer; display: block
 .newsletter-section .button.black:hover, .newsletter-section .button.black:focus { color: #e93e21; }
 .newsletter-section .button.black:before { color: #e93e21; background: #ffffff; }
 .newsletter-section .newsletter-image { position: relative; }
-.newsletter-section .newsletter-title { margin-top: 44px; }
+.newsletter-section .newsletter-title { margin-top: 10px; }
 
 /*************************************
         Blog page
